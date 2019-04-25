@@ -1,0 +1,23 @@
+{{if .Success}}
+	<!--<h1>Thanks for your message!</h1> -->
+	<body>
+	<h3 align="center"> Images for word {{.DisplayWord}}</h3>
+	{{range .OutArray}}
+		<img src={{.}} alt="Smiley face" width="140" height="200">
+	{{end}}
+	
+	</body>
+	<h1 align="center">Image Search Application</h1>
+	<center align="center"><form method="POST">
+		<label>Search Word:</label><br />
+		<input type="text" name="word"><br />
+		<input type="submit">
+	</form></center>
+{{else}}
+	<h1 align="center">Image Search Application</h1>
+	<center><form method="POST">
+		<label>Search Word:</label><br />
+		<input type="text" name="word"><br />
+		<input type="submit">
+	</form></center>
+{{end}}
