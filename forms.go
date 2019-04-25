@@ -93,7 +93,7 @@ func main() {
 
 	m = make(map[string] []ImageWeight)
 	for range [1]int{} {
-		file, err := os.Open("images.txt")
+		file, err := os.Open("imagesAll.txt")
 		if err != nil {
 			log.Fatal(err)
 		}
